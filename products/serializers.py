@@ -46,8 +46,8 @@ class ReviewSerializer(serializers.Serializer):
         return review
     
 
-
-
+                  
+       
 class FavoriteProductSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(default=serializers.CurrentUserDefault())
     product_id = serializers.IntegerField(write_only=True)
